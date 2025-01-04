@@ -29,6 +29,18 @@
     <p>Posters, CVs, and more at your fingertips.</p>
     <a href="products.html" class="btn">Browse Products</a>
   </section>
+<script>
+  document.querySelectorAll('a').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+      if (this.getAttribute('href').startsWith('#')) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      }
+    });
+  });
+</script>
 
   <!-- Footer -->
   <footer>
