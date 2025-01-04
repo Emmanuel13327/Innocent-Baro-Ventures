@@ -7,44 +7,56 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <!-- Header Section -->
-  <header>
-    <div class="container">
-      <h1>Welcome to Hub</h1>
-      <p>Your one-stop shop for digital products</p>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="products.html">Products</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <div class="logo">
+      <h1>Hub</h1>
     </div>
-  </header>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Projects</a></li>
+      <li><a href="#">Templates</a></li>
+      <li><a href="#">Brand</a></li>
+      <li><a href="#">Apps</a></li>
+    </ul>
+  </aside>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <h2>Explore Our Collection</h2>
-    <p>Posters, CVs, and more at your fingertips.</p>
-    <a href="products.html" class="btn">Browse Products</a>
-  </section>
-<script>
-  document.querySelectorAll('a').forEach(anchor => {
-    anchor.addEventListener('click', function(e) {
-      if (this.getAttribute('href').startsWith('#')) {
-        e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-          behavior: 'smooth'
-        });
-      }
-    });
-  });
-</script>
+  <!-- Main Content -->
+  <main class="content">
+    <header class="header">
+      <h1>What will you design today?</h1>
+    </header>
 
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2025 Hub. All Rights Reserved.</p>
-  </footer>
+    <!-- Button Grid -->
+    <section class="button-grid">
+      <div class="button">
+        <span>📄</span>
+        <p>Certificate</p>
+      </div>
+      <div class="button">
+        <span>🖼️</span>
+        <p>Poster</p>
+      </div>
+      <div class="button">
+        <span>🏷️</span>
+        <p>Logo</p>
+      </div>
+      <div class="button">
+        <span>📑</span>
+        <p>Doc</p>
+      </div>
+      <div class="button">
+        <span>🖊️</span>
+        <p>Custom Size</p>
+      </div>
+    </section>
+
+    <!-- Recent Section -->
+    <section class="recent">
+      <h2>Recent Designs</h2>
+      <p>No recent designs yet. Start creating now!</p>
+    </section>
+  </main>
 </body>
 </html>
+
